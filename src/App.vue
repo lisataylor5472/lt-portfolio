@@ -17,6 +17,7 @@
 <style>
 #app {
   font-family: Courier, Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -38,6 +39,15 @@ h1 {
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
+}
+
+h3 {
+  margin: 0px 0px 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 ul {
@@ -73,5 +83,27 @@ nav a.router-link-exact-active {
 
 .nav-links {
   float: right;
+}
+
+.divider {
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 28px auto;
+  background-color: #fff;
+}
+
+.divider.grey {
+  margin-bottom: 43px;
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.tri-column {
+  position: relative;
+  display: inline-block;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 26%;
+  vertical-align: text-top;
 }
 </style>
