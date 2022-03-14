@@ -11,6 +11,7 @@
     <div class="interest">
       <h2>Fun Runs</h2>
       <div class="divider grey"></div>
+      <p>Currently Training for the Donut Dash</p>
     </div>
     <div class="interest">
       <h2>History</h2>

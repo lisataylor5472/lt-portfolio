@@ -2,15 +2,19 @@
   <!-- <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   <div class="header-image">
-    <h1 class="main-heading">I'm Lisa.</h1>
+    <h1 class="main-heading">I'M LISA.</h1>
     <div class="divider"></div>
     <div class="main-subtitle">
-      <p>Ex Lighting Designer turned Software Engineer.</p>
+      <p>Lighting Designer turned Software Engineer.</p>
       <button>
-        <router-link to="/past-lives">the deets...</router-link>
+        <router-link to="/past-lives" style="text-decoration: none"
+          >the deets...</router-link
+        >
       </button>
     </div>
   </div>
+
+  <recent-projects></recent-projects>
 </template>
 
 <script>
@@ -23,6 +27,14 @@
 //     HelloWorld,
 //   },
 // };
+import RecentProjects from "@/components/RecentProjects.vue";
+
+export default {
+  name: "HomeView",
+  components: {
+    RecentProjects,
+  },
+};
 </script>
 
 <style>
@@ -40,9 +52,12 @@
   text-align: center;
 }
 
+.main-heading {
+  font-family: "Inconsolata";
+}
+
 .main-subtitle {
   font-style: bold;
-  font-family: Arial, Helvetica, sans-serif, monospace;
 }
 
 button {
@@ -55,10 +70,9 @@ button {
   background-color: #fff;
   -webkit-transition: margin-bottom 300ms ease;
   transition: margin-bottom 300ms ease;
-  font-family: Inconsolata, monospace;
+  font-family: "Inconsolata", monospace;
   color: #47474f;
   font-size: 14px;
   text-align: center;
-  text-decoration: none;
 }
 </style>

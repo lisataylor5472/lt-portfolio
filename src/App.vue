@@ -3,7 +3,7 @@
     <h1 class="title">[ lisa taylor ]</h1>
     <div class="nav-links">
       <ul>
-        <li><router-link to="/social">[social]</router-link></li>
+        <li><router-link to="/social">[connect]</router-link></li>
         <li><router-link to="/interests">[interests]</router-link></li>
         <li><router-link to="/coding">[coding]</router-link></li>
         <li><router-link to="/past-lives">[past lives]</router-link></li>
@@ -16,7 +16,7 @@
 
 <style>
 #app {
-  font-family: Courier, Helvetica, Arial, sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,16 +24,21 @@
   color: #2c3e50;
 }
 
+body {
+  margin: 0;
+  text-decoration: none;
+}
+
 .title {
   float: left;
-  font-family: Oswald, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 h1 {
-  font-family: Tahoma, serif;
+  font-family: "Montserrat", serif;
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 32px;
@@ -41,9 +46,18 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  margin: 0px 0px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 h3 {
   margin: 0px 0px 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -105,5 +119,52 @@ nav a.router-link-exact-active {
   padding-right: 3%;
   width: 26%;
   vertical-align: text-top;
+}
+
+.grey-section {
+  background-color: rgb(236, 236, 236);
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.project-wrapper {
+  position: relative;
+  bottom: 0px;
+  display: block;
+  -webkit-transition: bottom 300ms ease;
+  transition: bottom 300ms ease;
+  color: #333;
+}
+
+.project-wrapper:hover {
+  bottom: 8px;
+}
+
+.project-info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  border-color: #47474f;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .tri-column {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  .tri-column {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
 }
 </style>
