@@ -27,6 +27,21 @@ body {
   text-decoration: none;
 }
 
+.background-image {
+  padding: 80px 0px 100px;
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0.5),
+      hsla(0, 0%, 90%, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-position: 0px 0px, 50% 40%;
+  background-size: auto, cover;
+  color: #fff;
+  text-align: center;
+  background-attachment: fixed;
+}
+
 .title {
   float: left;
   margin-left: 15px;
@@ -52,6 +67,7 @@ h2 {
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #2c3e50;
 }
 
 h3 {
@@ -69,6 +85,15 @@ h3.int {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3.code {
+  margin: 0px 0px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -127,7 +152,7 @@ nav a.router-link-exact-active {
 }
 
 .grey-section {
-  background-color: rgb(166, 204, 206);
+  background-color: rgb(211, 211, 211);
   padding: 40px;
   margin-bottom: 20px;
 }

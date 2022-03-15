@@ -1,5 +1,5 @@
 <template>
-  <div class="header-image">
+  <div class="background-image">
     <div class="social">
       <h2>Let's connect!</h2>
       <div class="wrapper button-1">

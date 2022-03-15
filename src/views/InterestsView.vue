@@ -1,6 +1,6 @@
 <template>
-  <interests-overview></interests-overview>
-  <div class="grey-section">
+  <div class="background-image">
+    <interests-overview></interests-overview>
     <div class="interest">
       <div class="tri-column">
         <h2 id="video-games-link">Gaming</h2>
@@ -57,9 +57,8 @@
         <h3 class="int">RECENT RABBIT HOLES >></h3>
       </div>
       <div class="tri-column">
-        <p>Historic Sewing</p>
+        <p>Historic Sewing/Cooking</p>
         <p>Ancient Egypt</p>
-        <p>Historic Cooking</p>
       </div>
       <div class="tri-column">
         <p>Castles. Always Castles.</p>
