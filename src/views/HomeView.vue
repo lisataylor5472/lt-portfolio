@@ -5,16 +5,12 @@
     <h1 class="main-heading">I'M LISA.</h1>
     <div class="divider"></div>
     <div class="main-subtitle">
-      <p>Lighting Designer turned Software Engineer.</p>
-      <button>
-        <router-link to="/past-lives" style="text-decoration: none"
-          >the deets...</router-link
-        >
-      </button>
+      <h3>Lighting Designer turned Software Engineer.</h3>
     </div>
   </div>
-
+  <about-me></about-me>
   <recent-projects></recent-projects>
+  <interests-overview></interests-overview>
 </template>
 
 <script>
@@ -28,18 +24,22 @@
 //   },
 // };
 import RecentProjects from "@/components/RecentProjects.vue";
+import InterestsOverview from "@/components/InterestsOverview.vue";
+import AboutMe from "@/components/AboutMe.vue";
 
 export default {
   name: "HomeView",
   components: {
     RecentProjects,
+    InterestsOverview,
+    AboutMe,
   },
 };
 </script>
 
 <style>
 .header-image {
-  padding: 80px 0px 80px;
+  padding: 80px 0px 100px;
   background-image: linear-gradient(
       180deg,
       hsla(0, 0%, 0%, 0.5),
@@ -58,21 +58,5 @@ export default {
 
 .main-subtitle {
   font-style: bold;
-}
-
-button {
-  display: inline-block;
-  padding: 12px 26px;
-  border-style: solid;
-  border-width: 1px 1px 2px;
-  border-color: #47474f;
-  border-radius: 15px;
-  background-color: #fff;
-  -webkit-transition: margin-bottom 300ms ease;
-  transition: margin-bottom 300ms ease;
-  font-family: "Inconsolata", monospace;
-  color: #47474f;
-  font-size: 14px;
-  text-align: center;
 }
 </style>
