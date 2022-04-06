@@ -6,18 +6,21 @@
       <div class="divider"></div>
       <div class="main-subtitle">
         <h3>Lighting Designer turned Software Engineer.</h3>
+        <p>
+          This page is currently a work in progress - my first attempt at Vue.js
+        </p>
       </div>
     </div>
     <about-me></about-me>
     <recent-projects></recent-projects>
     <interests-overview></interests-overview>
-    <a
+    <!-- <a
       href="https://github.com/lisataylor5472"
       style="text-decoration: none"
       target="_blank"
     >
       <img src="../assets/GitHub-Mark-32px.png" />
-    </a>
+    </a> -->
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="background-image">
+  <div class="bgd-social">
     <div class="social">
       <h2>Let's connect!</h2>
       <div class="wrapper button-1">
@@ -34,9 +34,10 @@
   border-color: #47474f;
   border-radius: 30px 10px;
   margin: 30px;
+  margin-top: 75px;
 }
 
-.background-image {
+.bgd-social {
   padding: 15px 0px 100px;
   background-image: linear-gradient(
       180deg,

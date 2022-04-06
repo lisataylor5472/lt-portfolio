@@ -1,10 +1,12 @@
 <template>
   <div class="content">
     <div class="background-image">
-      <div class="interest">
-        <h2>01. ABOUT ME</h2>
-        <div class="divider grey"></div>
-        <div>
+      <div class="about">
+        <div class="qtr-column">
+          <h2>01. ABOUT ME</h2>
+        </div>
+
+        <div class="half-column">
           <p class="bio">
             I started my professional life in the realm of
             architecture/design/construction. It turns out I'm not as much of an
@@ -34,27 +36,27 @@
           </p>
         </div>
       </div>
-      <div class="interest">
-        <h2>02. EDUCATION</h2>
-        <div class="divider grey"></div>
-        <div class="tri-column">
-          <h3>BS in Interior Design</h3>
+      <div class="edu">
+        <div class="qtr-column">
+          <h2>02. EDUCATION</h2>
+        </div>
+        <div class="half-column">
+          <h3>
+            BACHELOR OF SCIENCE<br />
+            In Interior Design
+          </h3>
+
           <p>Colorado State University</p>
           <p>Ft Collins, CO</p>
-        </div>
-        <div class="tri-column">
-          <h3>COLLEGE</h3>
-          <p>CU Boulder - Environmental Design</p>
-          <p>CSU Ft. Collins - BS Interior Design</p>
-        </div>
-        <div class="tri-column">
-          <h3>SOFTWARE ENG.</h3>
-          <p>Turing School of Software & Design</p>
+          <br />
+          <h3>CERTIFICATES</h3>
+          <p>Turing</p>
           <p>Udemy</p>
           <p>Code Academy</p>
         </div>
       </div>
-      <div class="interest">
+
+      <div class="xp">
         <h2>03. EXPERIENCE</h2>
         <div class="divider grey"></div>
         <div class="tri-column">
@@ -173,7 +175,7 @@
 }
 
 .bio {
-  padding: 20px;
+  margin: 2% 10% 2% 10%;
 }
 
 .role {
@@ -182,5 +184,78 @@
 
 .job-desc {
   height: 75px;
+}
+.about {
+  display: block;
+  color: #333;
+  /* margin: 10px 10% 40px; */
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  border-color: #47474f;
+  /* border-radius: 30px 10px; */
+}
+
+.qtr-column {
+  width: 26%;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 20px;
+}
+.half-column {
+  width: 60%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.deg-type {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.xp {
+  display: block;
+  color: #333;
+  /* margin: 10px 10% 40px; */
+  padding: 50px 50px 100px 50px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  border-color: #47474f;
+  /* border-radius: 30px 10px; */
+}
+
+.edu {
+  position: relative;
+  bottom: 0px;
+  display: block;
+  color: #333;
+  margin: 10px 10% 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  border-color: #47474f;
+  border-radius: 10px;
+}
+
+.edu p {
+  margin: 0px;
+}
+
+@media screen and (max-width: 479px) {
+  .half-column,
+  .qtr-column {
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-bottom: 20px;
+  }
 }
 </style>

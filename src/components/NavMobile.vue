@@ -24,16 +24,19 @@
 
 <style lang="scss" scoped>
 .navigation {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 16px;
-  text-align: right;
+  position: fixed;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
 
   ul {
     list-style: none;
+    padding: 0;
+    list-style-type: none;
 
-    li {
+    .list-item {
       margin-bottom: 16px;
+      padding: 10px;
       text-transform: uppercase;
       border-bottom: 2px solid transparent;
       -webkit-transition: border-color 300ms ease;
@@ -47,12 +50,11 @@
     }
 
     a {
-      color: #fefefe;
+      color: #000000;
       text-decoration: none;
 
-      &:hover,
-      &.router-link-exact-active {
-        text-decoration: underline;
+      .nav-link:hover {
+        border-bottom-color: #7cdae2;
       }
     }
   }

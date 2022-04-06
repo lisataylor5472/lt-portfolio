@@ -101,7 +101,7 @@ h2 {
 }
 
 h3 {
-  margin: 0px 0px 20px;
+  margin: 0px 0px 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 20px;
