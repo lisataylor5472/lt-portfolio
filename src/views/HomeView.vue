@@ -1,28 +1,27 @@
 <template>
-  <!-- <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-  <div class="header-image">
-    <h1 class="main-heading">I'M LISA.</h1>
-    <div class="divider"></div>
-    <div class="main-subtitle">
-      <h3>Lighting Designer turned Software Engineer.</h3>
+  <div>
+    <slot />
+    <div class="header-image">
+      <h1 class="main-heading">I'M LISA.</h1>
+      <div class="divider"></div>
+      <div class="main-subtitle">
+        <h3>Lighting Designer turned Software Engineer.</h3>
+      </div>
     </div>
+    <about-me></about-me>
+    <recent-projects></recent-projects>
+    <interests-overview></interests-overview>
+    <a
+      href="https://github.com/lisataylor5472"
+      style="text-decoration: none"
+      target="_blank"
+    >
+      <img src="../assets/GitHub-Mark-32px.png" />
+    </a>
   </div>
-  <about-me></about-me>
-  <recent-projects></recent-projects>
-  <interests-overview></interests-overview>
 </template>
 
 <script>
-//@ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-
-// export default {
-//   name: "HomeView",
-//   components: {
-//     HelloWorld,
-//   },
-// };
 import RecentProjects from "@/components/RecentProjects.vue";
 import InterestsOverview from "@/components/InterestsOverview.vue";
 import AboutMe from "@/components/AboutMe.vue";

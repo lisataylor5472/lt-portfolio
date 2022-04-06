@@ -1,6 +1,7 @@
 <template>
   <div class="white-section">
     <h2>INTERESTS</h2>
+    <p>More info // operable links coming soon!</p>
     <div class="divider grey"></div>
     <div class="w-row">
       <div class="tri-column">

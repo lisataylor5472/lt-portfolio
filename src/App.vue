@@ -1,18 +1,53 @@
 <template>
-  <h1 class="title">[ lisa taylor ]</h1>
-  <nav>
-    <ul>
-      <li><router-link to="/social">[connect]</router-link></li>
-      <li><router-link to="/interests">[interests]</router-link></li>
-      <li><router-link to="/coding">[coding]</router-link></li>
-      <li><router-link to="/past-lives">[past lives]</router-link></li>
-      <li><router-link to="/">[home]</router-link></li>
-    </ul>
-  </nav>
-  <router-view />
+  <div id="app">
+    <div class="top-bar">
+      <router-link to="/" class="nav-link"
+        ><h1 class="title">[ lisa taylor ]</h1></router-link
+      >
+      <div class="nav-mobile" :class="{ open: showNav }">
+        <NavMobile />
+      </div>
+      <div id="navigation-icon" v-if="mobileView" @click="showNav = !showNav">
+        <img src="./assets/icons8-menu-32.png" />
+      </div>
+      <NavBar v-if="!mobileView" />
+    </div>
+    <router-view />
+  </div>
 </template>
 
+<script>
+import NavBar from "@/components/NavBar.vue";
+import NavMobile from "@/components/NavMobile.vue";
+
+export default {
+  data: () => {
+    return {
+      mobileView: false,
+      showNav: false,
+    };
+  },
+  methods: {
+    handleView() {
+      this.mobileView = window.innerWidth <= 768;
+    },
+  },
+  components: {
+    NavBar,
+    NavMobile,
+  },
+  created() {
+    this.handleView();
+  },
+};
+</script>
+
 <style>
+a,
+a:visited {
+  color: inherit;
+}
+
 #app {
   font-family: "Inconsolata", monospace;
   font-size: 0.9em;
@@ -22,42 +57,37 @@
   color: #2c3e50;
 }
 
-body {
-  margin: 0;
-  text-decoration: none;
+#navigation-icon {
+  /* display: inline-block; */
+  justify-content: right;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
-.background-image {
-  padding: 80px 0px 100px;
-  background-image: linear-gradient(
-      180deg,
-      hsla(0, 0%, 0%, 0.5),
-      hsla(0, 0%, 90%, 0.5)
-    ),
-    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
-  background-position: 0px 0px, 50% 40%;
-  background-size: auto, cover;
-  color: #fff;
-  text-align: center;
-  background-attachment: fixed;
+.top-bar {
+  padding: 0px;
+  height: 75px;
 }
 
 .title {
-  float: left;
-  margin-left: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 200px;
+  justify-content: left;
+  position: absolute;
+  top: 10px;
+  left: 15px;
 }
 
-h1 {
-  font-family: "Montserrat", serif;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 32px;
-  line-height: 38px;
-  font-weight: 700;
+.nav-mobile {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 h2 {
@@ -86,47 +116,6 @@ h3.int {
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-h3.code {
-  margin: 0px 0px 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  padding: 12px;
-}
-
-nav {
-  padding: 10px;
-  margin-bottom: 30px;
-  height: 2vh;
-}
-
-nav a {
-  font-weight: normal;
-  color: #2c3e50;
-  text-decoration: none;
-}
-
-nav a.router-link-exact-active {
-  color: #ff1c99;
 }
 
 .divider {
@@ -161,18 +150,6 @@ nav a.router-link-exact-active {
   background-color: rgb(255, 255, 255);
   padding: 40px;
   margin-bottom: 20px;
-}
-
-.social {
-  display: inline-block;
-  width: 300px;
-  color: #333;
-  padding: 20px 40px 20px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 1px 1px 2px;
-  border-color: #47474f;
-  border-radius: 30px 10px;
 }
 
 .wrapper {
@@ -226,21 +203,6 @@ img.interest-image {
   border-width: 1px 1px 2px;
   border-color: #47474f;
   border-radius: 30px 10px;
-}
-
-.quote {
-  position: relative;
-  bottom: 0px;
-  display: block;
-  color: #333;
-  padding: 15px 40px 20px;
-  margin: 30px 250px;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 1px 1px 2px;
-  border-color: #47474f;
-  border-radius: 15px;
 }
 
 @media screen and (max-width: 767px) {
