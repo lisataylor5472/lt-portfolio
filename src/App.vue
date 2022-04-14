@@ -13,12 +13,14 @@
       <NavBar v-if="!mobileView" />
     </div>
     <router-view />
+    <PageFooter />
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
 import NavMobile from "@/components/NavMobile.vue";
+import PageFooter from "@/components/PageFooter.vue";
 
 export default {
   data: () => {
@@ -35,6 +37,7 @@ export default {
   components: {
     NavBar,
     NavMobile,
+    PageFooter,
   },
   created() {
     this.handleView();
@@ -46,6 +49,11 @@ export default {
 a,
 a:visited {
   color: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 #app {
@@ -154,13 +162,11 @@ h3.int {
 
 .wrapper {
   position: relative;
-  bottom: 0px;
-  display: block;
   -webkit-transition: bottom 300ms ease;
   transition: bottom 300ms ease;
   color: #333;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgb(255, 255, 255);

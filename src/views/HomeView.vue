@@ -1,26 +1,16 @@
 <template>
   <div>
-    <slot />
+    <!-- <slot /> -->
     <div class="header-image">
       <h1 class="main-heading">I'M LISA.</h1>
       <div class="divider"></div>
       <div class="main-subtitle">
-        <h3>Lighting Designer turned Software Engineer.</h3>
-        <p>
-          This page is currently a work in progress - my first attempt at Vue.js
-        </p>
+        <h4>Lighting Designer turned Software Engineer.</h4>
       </div>
     </div>
     <about-me></about-me>
     <recent-projects></recent-projects>
     <interests-overview></interests-overview>
-    <!-- <a
-      href="https://github.com/lisataylor5472"
-      style="text-decoration: none"
-      target="_blank"
-    >
-      <img src="../assets/GitHub-Mark-32px.png" />
-    </a> -->
   </div>
 </template>
 
@@ -59,6 +49,13 @@ export default {
 }
 
 .main-subtitle {
-  font-style: bold;
+  color: rgb(41, 41, 41);
+  padding: 5px;
+  margin: 30px 30% 40px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #47474f;
+  filter: drop-shadow(10px 10px 4px #3b3b3b);
 }
 </style>

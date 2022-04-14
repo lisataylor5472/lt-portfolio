@@ -2,7 +2,10 @@
   <nav class="navbar">
     <ul class="nav-list" id="navi-list">
       <li class="list-item">
-        <router-link to="/past-lives" class="nav-link">[about me]</router-link>
+        <router-link to="/" class="nav-link">[main]</router-link>
+      </li>
+      <li class="list-item">
+        <router-link to="/past-lives" class="nav-link">[about]</router-link>
       </li>
       <li class="list-item">
         <router-link to="/coding" class="nav-link">[portfolio]</router-link>

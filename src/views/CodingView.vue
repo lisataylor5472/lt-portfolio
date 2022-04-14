@@ -41,7 +41,6 @@
         <p>Many-to-Many</p>
       </div>
     </div>
-    <recent-projects></recent-projects>
     <div class="quote">
       <blockquote>
         “You know the greatest danger facing us is ourselves, an irrational fear
@@ -50,6 +49,7 @@
       </blockquote>
       <p>- Captain James T Kirk.</p>
     </div>
+    <recent-projects></recent-projects>
   </div>
 </template>
 
@@ -90,7 +90,6 @@ h3.code {
 }
 
 .code-overview {
-  /* position: relative; */
   bottom: 0px;
   color: #333;
   margin: 30px 10% 40px;
@@ -104,18 +103,14 @@ h3.code {
 }
 
 .quote {
-  position: relative;
-  bottom: 0px;
-  display: block;
   color: #333;
   padding: 15px 40px 20px;
-  margin: 30px 30px;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  margin: 30px 20% 40px;
+  background-color: white;
   border-style: solid;
-  border-width: 1px 1px 2px;
+  border-width: 1px;
   border-color: #47474f;
-  border-radius: 15px;
+  filter: drop-shadow(10px 10px 4px #3b3b3b);
 }
 
 @media screen and (max-width: 767px) {
