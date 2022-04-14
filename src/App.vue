@@ -58,7 +58,7 @@ ul {
 
 #app {
   font-family: "Inconsolata", monospace;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -66,7 +66,6 @@ ul {
 }
 
 #navigation-icon {
-  /* display: inline-block; */
   justify-content: right;
   position: absolute;
   top: 15px;
@@ -75,7 +74,7 @@ ul {
 
 .top-bar {
   padding: 0px;
-  height: 75px;
+  height: 15vh;
 }
 
 .title {
