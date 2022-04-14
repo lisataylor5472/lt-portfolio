@@ -63,6 +63,7 @@ ul {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-size: 1.2em;
 }
 
 #navigation-icon {
@@ -79,10 +80,10 @@ ul {
 
 .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
-  width: 200px;
+  width: 20vw;
   justify-content: left;
   position: absolute;
   top: 10px;
@@ -100,7 +101,7 @@ ul {
 h2 {
   margin: 0px 0px 20px;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -110,16 +111,7 @@ h2 {
 h3 {
   margin: 0px 0px 10px;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-h3.int {
-  margin: 0px 0px 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -180,34 +172,29 @@ h3.int {
 }
 
 .button-1 {
-  width: 150px;
+  width: 18vw;
   display: inline-block;
+}
+
+.button-2 {
+  width: 30vw;
+  text-align: center;
 }
 
 .w-row {
   margin-bottom: 20px;
 }
 
-img.interest-image {
-  border-radius: 50%;
-  width: 225px;
-  height: 225px;
-  object-fit: cover;
-}
-
-.interest {
-  position: relative;
-  bottom: 0px;
-  display: block;
-  color: #333;
-  margin: 10px 10% 40px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  background-color: rgb(255, 255, 255);
+.subtitle {
+  background-color: white;
+  padding: 5px;
   border-style: solid;
-  border-width: 1px 1px 2px;
+  border-width: 1px;
   border-color: #47474f;
-  border-radius: 30px 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 767px) {

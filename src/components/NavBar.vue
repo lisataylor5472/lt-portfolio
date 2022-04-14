@@ -46,7 +46,7 @@ export default {};
   transition: border-color 300ms ease;
   font-family: Montserrat, sans-serif;
   color: #404040;
-  font-size: 12px;
+  font-size: 0.8em;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;

@@ -1,7 +1,7 @@
 <template>
   <div class="bgd-social">
     <div class="social">
-      <h2>Let's connect!</h2>
+      <h2>LET'S CONNECT!</h2>
       <div class="wrapper button-1">
         <a
           href="https://www.linkedin.com/in/thelisataylor/"

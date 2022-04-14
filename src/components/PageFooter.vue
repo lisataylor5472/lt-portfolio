@@ -2,14 +2,14 @@
   <div class="footer">
     <div class="tri-column">
       <div class="box">
-        <h4>THANKS FOR STOPPING BY!</h4>
+        <h4>Thanks for stopping by!</h4>
       </div>
       <div class="divider"></div>
     </div>
     <div class="tri-column">
       <h4>NAVIGATION</h4>
       <div class="footer-btn-wrap button-1">
-        <router-link to="/home" class="nav-link">home</router-link>
+        <router-link to="/" class="nav-link">home</router-link>
       </div>
       <div class="footer-btn-wrap button-1">
         <router-link to="/past-lives" class="nav-link">about</router-link>
@@ -66,7 +66,7 @@ export default {};
   border-style: solid;
   border-width: 1px;
   border-color: #47474f;
-  filter: drop-shadow(10px 10px 4px #3b3b3b);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 .footer-btn-wrap {
   position: relative;
@@ -95,6 +95,7 @@ export default {};
 @media screen and (max-width: 767px) {
   .footer {
     height: 100vh;
+    width: 100vw;
     display: inline-block;
   }
 }
