@@ -1,5 +1,13 @@
 <template>
   <div class="background-image">
+    <div class="quote">
+      <blockquote>
+        “You know the greatest danger facing us is ourselves, an irrational fear
+        of the unknown. But there’s no such thing as the unknown — only things
+        temporarily hidden, temporarily not understood.”
+      </blockquote>
+      <p>- Captain James T Kirk.</p>
+    </div>
     <div class="code-overview">
       <h2 id="video-games-link">BUILDING SKILLS IN</h2>
       <div class="divider grey"></div>
@@ -40,14 +48,6 @@
         <p>One-to-Many</p>
         <p>Many-to-Many</p>
       </div>
-    </div>
-    <div class="quote">
-      <blockquote>
-        “You know the greatest danger facing us is ourselves, an irrational fear
-        of the unknown. But there’s no such thing as the unknown — only things
-        temporarily hidden, temporarily not understood.”
-      </blockquote>
-      <p>- Captain James T Kirk.</p>
     </div>
     <recent-projects></recent-projects>
   </div>

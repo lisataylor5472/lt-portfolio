@@ -58,12 +58,11 @@ ul {
 
 #app {
   font-family: "Inconsolata", monospace;
-  /* font-size: 0.9em; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #navigation-icon {
@@ -142,7 +141,6 @@ h3 {
 .grey-section {
   background-color: rgb(211, 211, 211);
   padding: 40px;
-  margin-bottom: 20px;
 }
 
 .white-section {

@@ -59,7 +59,9 @@ export default {};
   color: rgb(11, 11, 11);
   display: flex;
   align-items: center;
+  justify-content: right;
   padding: 20px;
+  border: 1px solid black;
 }
 .box {
   background-color: white;
