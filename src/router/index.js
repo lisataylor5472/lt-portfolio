@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CodingView from "../views/CodingView.vue";
-import InterestsView from "../views/InterestsView.vue";
 import SocialView from "../views/SocialView.vue";
-import PastLivesView from "../views/PastLivesView.vue";
+import AboutView from "../views/AboutView.vue";
 
 const routes = [
   {
@@ -12,35 +11,21 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/past-lives",
-    name: "past-lives",
+    path: "/about",
+    name: "about",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: PastLivesView,
+    component: AboutView,
   },
   {
-    path: "/social",
-    name: "social",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/connect",
+    name: "connect",
     component: SocialView,
   },
   {
-    path: "/interests",
-    name: "interests",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: InterestsView,
-  },
-  {
-    path: "/coding",
-    name: "coding",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/portfolio",
+    name: "portfolio",
     component: CodingView,
   },
 ];

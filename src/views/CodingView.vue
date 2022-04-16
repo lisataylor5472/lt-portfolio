@@ -105,7 +105,7 @@ h3.code {
 .quote {
   color: #333;
   padding: 15px 40px 20px;
-  margin: 30px 20% 40px;
+  margin: 100px 20% 40px;
   background-color: white;
   border-style: solid;
   border-width: 1px;

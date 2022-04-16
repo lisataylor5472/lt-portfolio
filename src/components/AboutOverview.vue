@@ -23,7 +23,7 @@
       </p>
     </div>
     <div class="wrapper button-1">
-      <router-link to="/past-lives" style="text-decoration: none"
+      <router-link to="/about" style="text-decoration: none"
         >the deets...</router-link
       >
     </div>

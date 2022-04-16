@@ -45,7 +45,7 @@ export default {};
 
 .about {
   color: #333;
-  margin: 10px 10% 40px;
+  margin: 100px 10% 40px;
   padding: 20px 20px 20px 20px;
   margin-bottom: 40px;
   background-color: rgb(255, 255, 255);

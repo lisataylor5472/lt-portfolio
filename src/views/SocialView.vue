@@ -57,6 +57,6 @@
   border-color: #47474f;
   border-radius: 30px 10px;
   margin: 30px;
-  margin-top: 75px;
+  margin-top: 150px;
 }
 </style>

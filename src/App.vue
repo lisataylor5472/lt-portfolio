@@ -1,46 +1,19 @@
 <template>
-  <div id="app">
-    <div class="top-bar">
-      <router-link to="/" class="nav-link"
-        ><h1 class="title">[ lisa taylor ]</h1></router-link
-      >
-      <div class="nav-mobile" :class="{ open: showNav }">
-        <NavMobile />
-      </div>
-      <div id="navigation-icon" v-if="mobileView" @click="showNav = !showNav">
-        <img src="./assets/icons8-menu-32.png" />
-      </div>
-      <NavBar v-if="!mobileView" />
-    </div>
+  <div class="app">
+    <NavMenu />
     <router-view />
     <PageFooter />
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import NavMobile from "@/components/NavMobile.vue";
+import NavMenu from "@/components/NavMenu.vue";
 import PageFooter from "@/components/PageFooter.vue";
 
 export default {
-  data: () => {
-    return {
-      mobileView: false,
-      showNav: false,
-    };
-  },
-  methods: {
-    handleView() {
-      this.mobileView = window.innerWidth <= 768;
-    },
-  },
   components: {
-    NavBar,
-    NavMobile,
+    NavMenu,
     PageFooter,
-  },
-  created() {
-    this.handleView();
   },
 };
 </script>
@@ -51,11 +24,6 @@ a:visited {
   color: inherit;
 }
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 #app {
   font-family: "Inconsolata", monospace;
   -webkit-font-smoothing: antialiased;
@@ -63,18 +31,6 @@ ul {
   text-align: center;
   color: #2c3e50;
   font-size: 1em;
-}
-
-#navigation-icon {
-  justify-content: right;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.top-bar {
-  padding: 0px;
-  height: 15vh;
 }
 
 .title {
@@ -87,14 +43,6 @@ ul {
   position: absolute;
   top: 10px;
   left: 15px;
-}
-
-.nav-mobile {
-  display: none;
-}
-
-.open {
-  display: block;
 }
 
 h2 {
