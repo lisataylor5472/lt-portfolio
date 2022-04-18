@@ -69,14 +69,14 @@
         </div>
         <a
           style="text-decoration: none"
-          href="https://github.com/lisataylor5472/viewing_party_lite"
+          href="https://github.com/lisataylor5472/little_esty_shop_bulk_discounts"
           target="-blank"
         >
           <div class="proj-btn">code</div>
         </a>
         <a
           style="text-decoration: none"
-          href="https://turing-viewing-party-lite.herokuapp.com/"
+          href="https://glacial-retreat-77890.herokuapp.com/"
           target="-blank"
         >
           <div class="proj-btn">deployed</div>
