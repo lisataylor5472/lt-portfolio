@@ -155,7 +155,7 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   z-index: 99;
   width: 100%;
   position: fixed;
