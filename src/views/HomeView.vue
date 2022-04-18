@@ -1,5 +1,4 @@
 <template>
-  <!-- <div> -->
   <div class="header-image">
     <h1 class="main-heading">I'M LISA.</h1>
     <div class="divider"></div>
@@ -10,7 +9,6 @@
   <AboutMe />
   <RecentProjects />
   <InterestsOverview />
-  <!-- </div> -->
 </template>
 
 <script>

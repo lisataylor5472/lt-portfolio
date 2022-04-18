@@ -14,10 +14,26 @@
             >Portfolio</router-link
           >
         </li>
-        <li>
+        <!-- <li>
           <router-link class="link" :to="{ name: 'connect' }"
             >Connect</router-link
           >
+        </li> -->
+        <li>
+          <a href="https://www.linkedin.com/in/thelisataylor/">
+            <img
+              alt="LinkedIn"
+              src="https://img.icons8.com/ios-glyphs/60/000000/linkedin.png"
+              class="social-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/lisataylor5472">
+            <img
+              alt="GitHub"
+              src="https://img.icons8.com/ios-glyphs/60/000000/github.png"
+              class="social-icon"
+          /></a>
         </li>
       </ul>
       <div class="icon">
@@ -28,12 +44,6 @@
           class="far fa-bars"
           :class="{ 'icon-active': mobileNav }"
         />
-        <!-- <i
-          @click="toggleMobileView"
-          v-show="mobile"
-          class="far fa-bars"
-          :class="{ 'icon-active': mobileNav }"
-        /> -->
       </div>
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
@@ -68,6 +78,28 @@
               :to="{ name: 'connect' }"
               >Connect</router-link
             >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/thelisataylor/"
+              @click="toggleMobileView"
+            >
+              <img
+                alt="LinkedIn"
+                src="https://img.icons8.com/ios-glyphs/60/000000/linkedin.png"
+                class="social-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/lisataylor5472"
+              @click="toggleMobileView"
+            >
+              <img
+                alt="GitHub"
+                src="https://img.icons8.com/ios-glyphs/60/000000/github.png"
+                class="social-icon"
+            /></a>
           </li>
         </ul>
       </transition>
@@ -188,6 +220,10 @@ header {
       align-items: center;
       flex: 1;
       justify-content: right;
+    }
+
+    .social-icon {
+      width: 40px;
     }
     .icon {
       display: flex;

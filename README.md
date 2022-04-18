@@ -1,4 +1,4 @@
-# lt-portfolio
+# Lisa Taylor Portfolio
 
 ## Project setup
 ```

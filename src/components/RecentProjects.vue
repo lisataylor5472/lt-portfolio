@@ -1,83 +1,86 @@
 <template>
-  <div class="grey-section">
-    <div class="w-container">
-      <h2>RECENT PROJECTS</h2>
-      <div class="divider grey"></div>
-      <div class="w-row">
-        <div class="tri-column">
-          <a
-            style="text-decoration: none"
-            href="https://github.com/lisataylor5472/lt-portfolio"
-            target="-blank"
-          >
-            <div class="wrapper">
-              <h3>This Web Portfolio</h3>
-              <div>Vue.js/HTML/CSS</div>
-            </div>
-          </a>
+  <div class="proj-container">
+    <h2>RECENT PROJECTS</h2>
+    <div class="divider grey"></div>
+    <div class="proj-grouping">
+      <div class="proj-card">
+        <h2>Viewing Party Lite</h2>
+        <div class="proj-deets">
+          <div class="proj-title">[Tools]</div>
+          <p>Ruby | Rails | Heroku | Postgres | Postman | MoviesDB</p>
+          <div class="proj-title">[Concepts]</div>
+          <p>OOP | MVC | CRUD | REST API</p>
+          <div class="proj-title">[SUMMARY]</div>
+          <p>
+            Initial functionality of an App that uses a REST API to populate a
+            movie database. Once a user is created they can search the movie
+            database and select a movie for their viewing party.
+          </p>
         </div>
-        <div class="tri-column">
-          <a
-            style="text-decoration: none"
-            href="https://github.com/lisataylor5472/little_esty_shop_bulk_discounts"
-            target="-blank"
-          >
-            <div class="wrapper">
-              <h3>little online shop</h3>
-              <div>CRUD / MVC</div>
-            </div>
-          </a>
-        </div>
-        <div class="tri-column">
-          <a
-            style="text-decoration: none"
-            href="https://github.com/lisataylor5472/relational_rails"
-            target="-blank"
-          >
-            <div class="wrapper">
-              <h3>relational rails</h3>
-              <div>MVC Practice</div>
-            </div>
-          </a>
-        </div>
+        <a
+          style="text-decoration: none"
+          href="https://github.com/lisataylor5472/viewing_party_lite"
+          target="-blank"
+        >
+          <div class="proj-btn">code</div>
+        </a>
+        <a
+          style="text-decoration: none"
+          href="https://turing-viewing-party-lite.herokuapp.com/"
+          target="-blank"
+        >
+          <div class="proj-btn">deployed</div>
+        </a>
       </div>
-      <div class="w-row">
-        <div class="tri-column">
-          <a
-            style="text-decoration: none"
-            href="https://github.com/lisataylor5472/enigma"
-            target="-blank"
-          >
-            <div class="wrapper">
-              <h3>enigma</h3>
-              <div>Encrypt/Decrypt</div>
-            </div>
-          </a>
+      <div class="proj-card">
+        <h2>WEB PORTFOLIO</h2>
+        <div class="proj-deets">
+          <div class="proj-title">[Tools]</div>
+          <p>HTML | CSS | JS | Vue.js | Netlify</p>
+          <div class="proj-title">[Concepts]</div>
+          <p>OOP | MVC | Front End Design</p>
+          <div class="proj-title">[SUMMARY]</div>
+          <p>
+            My first stab at front end design and the creation of a Vue.js app.
+            This site will be an ongoing project.
+          </p>
         </div>
-        <div class="tri-column">
-          <a
-            style="text-decoration: none"
-            href="https://github.com/lisataylor5472/battleship"
-            target="-blank"
-          >
-            <div class="wrapper">
-              <h3>battleship</h3>
-              <div>CLI Game with Ruby</div>
-            </div>
-          </a>
+        <a
+          style="text-decoration: none"
+          href="https://github.com/lisataylor5472/lt-portfolio"
+          target="-blank"
+        >
+          <div class="proj-btn">code</div>
+        </a>
+      </div>
+      <div class="proj-card">
+        <h2>Little Online Shop</h2>
+        <div class="proj-deets">
+          <div class="proj-title">[Tools]</div>
+          <p>Ruby | Rails | Heroku | Postgres</p>
+          <div class="proj-title">[Concepts]</div>
+          <p>OOP | MVC | CRUD</p>
+          <div class="proj-title">[SUMMARY]</div>
+          <p>
+            Initial functionality of an App that uses a REST API to populate a
+            movie database. Once a user is created they can search the movie
+            database and select a movie for their viewing party.
+          </p>
         </div>
-        <div class="tri-column">
-          <a
-            style="text-decoration: none"
-            href="https://gist.github.com/lisataylor5472"
-            target="-blank"
-          >
-            <div class="wrapper">
-              <h3>gists</h3>
-              <div>GitHub reference notes</div>
-            </div>
-          </a>
-        </div>
+        <a
+          style="text-decoration: none"
+          href="https://github.com/lisataylor5472/viewing_party_lite"
+          target="-blank"
+        >
+          <div class="proj-btn">code</div>
+        </a>
+        <a
+          style="text-decoration: none"
+          href="https://turing-viewing-party-lite.herokuapp.com/"
+          target="-blank"
+        >
+          <div class="proj-btn">deployed</div>
+        </a>
       </div>
     </div>
   </div>
@@ -86,8 +89,82 @@
 <script>
 export default {
   name: "RecentProjects",
-  props: {
-    msg: String,
-  },
 };
 </script>
+
+<style scoped>
+.proj-container {
+  background-color: rgb(211, 211, 211);
+  padding: 5vw;
+}
+
+.proj-grouping {
+  display: flex;
+  justify-content: center;
+}
+
+.proj-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 2%;
+  width: 26%;
+  vertical-align: text-top;
+  border: 1px solid black;
+  background-color: white;
+  margin: 5px;
+}
+
+.proj-deets {
+  height: 100%;
+}
+
+.proj-btn {
+  color: #333;
+  width: 100px;
+  padding: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  border-color: #47474f;
+  border-radius: 15px;
+}
+
+.proj-btn:hover {
+  border-color: #7cdae2;
+}
+
+.proj-title {
+  text-align: left;
+  margin: 0px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px;
+}
+
+@media screen and (max-width: 999px) {
+  .proj-grouping {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .proj-card {
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-bottom: 20px;
+  }
+}
+</style>

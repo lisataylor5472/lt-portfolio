@@ -49,7 +49,7 @@
         <p>Many-to-Many</p>
       </div>
     </div>
-    <recent-projects></recent-projects>
+    <RecentProjects />
   </div>
 </template>
 
@@ -57,7 +57,7 @@
 import RecentProjects from "@/components/RecentProjects.vue";
 
 export default {
-  name: "HomeView",
+  name: "CodingView",
   components: {
     RecentProjects,
   },
@@ -84,7 +84,6 @@ h3.code {
     url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
   background-position: 0px 0px, 50% 40%;
   background-size: auto, cover;
-  color: #fff;
   text-align: center;
   background-attachment: fixed;
 }
