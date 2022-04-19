@@ -38,6 +38,7 @@ export default {
   /* background-position: 0px 0px, 50% 40%; */
   background-size: auto, cover;
   text-align: center;
+  background-attachment: fixed;
 }
 
 .main-heading {

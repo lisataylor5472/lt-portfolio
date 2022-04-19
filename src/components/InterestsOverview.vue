@@ -10,14 +10,14 @@
         <div class="int-text">
           <div class="int-title"><h2>VIDEO GAMES</h2></div>
           <div class="int-deets">
-            <br />
-            <p>[SOME FAVORITES]</p>
-            <br />
-            <p>- Zelda: Breath of the Wild</p>
-            <p>- Elden Ring</p>
-            <p>- Minecraft</p>
-            <p>- Assassin's Creed: Odyssey</p>
-            <p>- Sea of Thieves</p>
+            <h4>[SOME FAVORITES]</h4>
+            <ul>
+              <li>Zelda: Breath of the Wild</li>
+              <li>Elden Ring</li>
+              <li>Minecraft</li>
+              <li>Assassin's Creed: Odyssey</li>
+              <li>Sea of Thieves</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -30,18 +30,18 @@
         <div class="int-text">
           <div class="int-title"><h2>MOVIES</h2></div>
           <div class="int-deets">
-            <br />
-            <p>[SOME FAVORITE MOVIES]</p>
-            <br />
-            <p>- Good Will Hunting</p>
-            <p>- Dune</p>
-            <p>- The Lobster</p>
-            <p>- The Man Who Killed Don Quixote</p>
-            <p>- Death to Smoochy</p>
-            <p>- Harold and Maude</p>
-            <p>- Alien</p>
-            <p>- Willow</p>
-            <p>- Crouching Tiger Hidden Dragon</p>
+            <h4>[SOME FAVORITE MOVIES]</h4>
+            <ul>
+              <li>Good Will Hunting</li>
+              <li>Dune</li>
+              <li>The Lobster</li>
+              <li>The Man Who Killed Don Quixote</li>
+              <li>Death to Smoochy</li>
+              <li>Harold and Maude</li>
+              <li>Alien</li>
+              <li>Willow</li>
+              <li>Crouching Tiger Hidden Dragon</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -54,14 +54,14 @@
         <div class="int-text">
           <div class="int-title"><h2>HISTORY</h2></div>
           <div class="int-deets">
-            <br />
-            <p>[CURRENT OBSESSIONS]</p>
-            <br />
-            <p>- Ancient Egypt</p>
-            <p>- The Victorian Era</p>
-            <p>- Castle Design / Building</p>
-            <p>- Historic Sewing / Cooking</p>
-            <p>- Ghost Towns</p>
+            <h4>[CURRENT OBSESSIONS]</h4>
+            <ul>
+              <li>Ancient Egypt</li>
+              <li>The Victorian Era</li>
+              <li>Castle Design / Building</li>
+              <li>Historic Sewing / Cooking</li>
+              <li>Ghost Towns</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -74,13 +74,13 @@
         <div class="int-text">
           <div class="int-title"><h2>LEARNING</h2></div>
           <div class="int-deets">
-            <br />
-            <p>[RECENT ENDEAVORS]</p>
-            <br />
-            <p>- Software Engineering</p>
-            <p>- How to play Elden Ring</p>
-            <p>- How to care for rescue cats</p>
-            <p>- Minecraft village mechanics</p>
+            <h4>[RECENT ENDEAVORS]</h4>
+            <ul>
+              <li>Software Engineering</li>
+              <li>How to play Elden Ring</li>
+              <li>How to care for rescue cats</li>
+              <li>Minecraft village mechanics</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -93,13 +93,13 @@
         <div class="int-text">
           <div class="int-title"><h2>BEING ACTIVE</h2></div>
           <div class="int-deets">
-            <br />
-            <p>[RECENT PURSUITS]</p>
-            <br />
-            <p>- Daily Walks</p>
-            <p>- Donut Dash 5K</p>
-            <p>- Yin Yoga</p>
-            <p>- Hiking!</p>
+            <h4>[RECENT PURSUITS]</h4>
+            <ul>
+              <li>Daily Walks</li>
+              <li>Donut Dash 5K</li>
+              <li>Yin Yoga</li>
+              <li>Hiking!</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -141,21 +141,55 @@ export default {};
 
 .int-text {
   text-align: left;
-  /* margin-left: 3vw;
-  margin-top: 1vw; */
   display: flex;
   align-items: center;
 }
 
 .int-deets {
-  /* margin-left: 3vw; */
   border-left: 1px solid grey;
   width: 25vw;
   padding-left: 10px;
+  line-height: 1.1;
 }
 
 .int-title {
   width: 20vw;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .interests {
+    border: none;
+  }
+  .int-row {
+    flex-direction: column;
+    width: 80vw;
+    margin: 20px auto;
+    border-color: rgb(224, 224, 224);
+  }
+
+  .int-text {
+    flex-direction: column;
+  }
+
+  .int-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .int-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .int-deets {
+    border: none;
+    text-overflow: wrap;
+    width: 300px;
+    margin-bottom: 20px;
+  }
 }
 </style>

@@ -5,16 +5,9 @@
       <p>Fig. A</p>
     </div>
     <div class="about-text">
-      <div class="subtitle">A 'Little' Intro...</div>
+      <h2>A Little Intro...</h2>
       <!-- <div class="divider grey"></div> -->
       <p class="bio">
-        As a kid I wanted to be an architect. I gave it a try, but found I
-        didn't love how subjective it could be. After navigating the world of
-        design and construction for a number of years (trying to find more
-        objective niches) - I decided to pivot to the world of computers and
-        software engineering. It is a much better fit.
-        <br />
-        <br />
         I've always been a bit of a 'taskmaster' (see Fig. A). I like to get
         things done, but have fun along the way. I love to laugh and enjoy the
         simple things in life. In my freetime I like to play video games, do
@@ -23,7 +16,8 @@
         conveniently become very charismatic when I'm nervous.
         <br />
         <br />
-        Below is a little summary of my journey and interests!
+        Below is a little summary of my journey and interests. Don't hesitate to
+        reach out via LinkedIn if you'd like to know more!
       </p>
     </div>
   </div>
@@ -35,8 +29,8 @@ export default {};
 
 <style scoped>
 .baby-lisa {
-  width: 20vw;
-  height: 20vw;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid rgb(49, 49, 49);
@@ -59,5 +53,18 @@ export default {};
 .about-text {
   text-align: center;
   margin-left: 5vw;
+}
+
+@media screen and (max-width: 690px) {
+  .about {
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .about-text {
+    margin: 0;
+  }
 }
 </style>

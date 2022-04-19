@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="foot-txt">
-      <h3>THANK YOU FOR STOPPING BY!</h3>
+      <h3>LET'S CONNECT!</h3>
     </div>
     <div class="footer-links">
       <a

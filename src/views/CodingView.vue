@@ -98,7 +98,6 @@ h3.code {
   border-style: solid;
   border-width: 1px 1px 2px;
   border-color: #47474f;
-  border-radius: 30px 10px;
 }
 
 .quote {

@@ -83,7 +83,6 @@
 
 <style scoped>
 .xp {
-  /* background-color: rgb(213, 213, 213); */
   color: rgb(46, 46, 46);
   padding: 4vh 10vw;
 }
@@ -130,7 +129,7 @@
 }
 .xp-details,
 .xp-role {
-  text-align: right;
+  text-align: left;
 }
 .xp-role {
   font-weight: 700;
@@ -143,5 +142,39 @@
   border-width: 1px;
   border-color: #47474f;
   filter: drop-shadow(10px 10px 4px #3b3b3b);
+}
+
+@media screen and (max-width: 690px) {
+  .xp {
+    padding: 5px;
+  }
+
+  .xp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .xp-main-box {
+    border: none;
+    width: 100vw;
+  }
+
+  .xp-card {
+    padding: 15px 2px;
+  }
+
+  .xp-card,
+  .xp-details {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .button-2 {
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+  }
 }
 </style>
