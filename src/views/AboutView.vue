@@ -1,6 +1,7 @@
 <template>
   <div class="background-image">
     <AboutDetail />
+    <h1 class="main-heading">EXPERIENCE</h1>
     <PastLives />
     <InterestsOverview />
   </div>

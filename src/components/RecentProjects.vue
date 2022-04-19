@@ -7,7 +7,7 @@
         <h2>Viewing Party Lite</h2>
         <div class="proj-deets">
           <div class="proj-title">[Tools]</div>
-          <p>Ruby | Rails | Heroku | Postgres | Postman | MoviesDB</p>
+          <p>Ruby | Rails | Heroku* | Postgres | Postman | MoviesDB</p>
           <div class="proj-title">[Concepts]</div>
           <p>OOP | MVC | CRUD | REST API</p>
           <div class="proj-title">[SUMMARY]</div>
@@ -16,14 +16,12 @@
             movie database. Once a user is created they can search the movie
             database and select a movie for their viewing party.
           </p>
+          <div class="proj-title">[NOTES]</div>
+          <p>
+            *Please bare with Heroku hosting - it is a free service, so the
+            initial loading of the app may take a painful 20-30 seconds
+          </p>
         </div>
-        <a
-          style="text-decoration: none"
-          href="https://github.com/lisataylor5472/viewing_party_lite"
-          target="-blank"
-        >
-          <div class="proj-btn">code</div>
-        </a>
         <a
           style="text-decoration: none"
           href="https://turing-viewing-party-lite.herokuapp.com/"
@@ -31,18 +29,27 @@
         >
           <div class="proj-btn">deployed</div>
         </a>
+        <a
+          style="text-decoration: none"
+          href="https://github.com/lisataylor5472/viewing_party_lite"
+          target="-blank"
+        >
+          <div class="proj-btn">code</div>
+        </a>
       </div>
       <div class="proj-card">
         <h2>WEB PORTFOLIO</h2>
         <div class="proj-deets">
           <div class="proj-title">[Tools]</div>
           <p>HTML | CSS | JS | Vue.js | Netlify</p>
+          <br />
           <div class="proj-title">[Concepts]</div>
           <p>OOP | MVC | Front End Design</p>
           <div class="proj-title">[SUMMARY]</div>
           <p>
             My first stab at front end design and the creation of a Vue.js app.
-            This site will be an ongoing project.
+            This site will be an ongoing project. You are currently viewing the
+            deployed application.
           </p>
         </div>
         <a
@@ -53,33 +60,40 @@
           <div class="proj-btn">code</div>
         </a>
       </div>
+
       <div class="proj-card">
         <h2>Little Online Shop</h2>
         <div class="proj-deets">
           <div class="proj-title">[Tools]</div>
-          <p>Ruby | Rails | Heroku | Postgres</p>
+          <p>Ruby | Rails | Heroku* | Postgres</p>
+          <br />
           <div class="proj-title">[Concepts]</div>
           <p>OOP | MVC | CRUD</p>
           <div class="proj-title">[SUMMARY]</div>
           <p>
-            Initial functionality of an App that uses a REST API to populate a
-            movie database. Once a user is created they can search the movie
-            database and select a movie for their viewing party.
+            Group Project that focuses on CRUD and ORM within a Rails framework.
+            Main focus of project was on MVC architecture, and less weight on
+            visual styling.
+          </p>
+          <div class="proj-title">[NOTES]</div>
+          <p>
+            *Please bare with Heroku hosting - it is a free service, so the
+            initial loading of the app may take a painful 20-30 seconds
           </p>
         </div>
+        <!-- <a
+          style="text-decoration: none"
+          href="https://glacial-retreat-77890.herokuapp.com/"
+          target="-blank"
+        >
+          <div class="proj-btn">deployed</div>
+        </a> -->
         <a
           style="text-decoration: none"
           href="https://github.com/lisataylor5472/little_esty_shop_bulk_discounts"
           target="-blank"
         >
           <div class="proj-btn">code</div>
-        </a>
-        <a
-          style="text-decoration: none"
-          href="https://glacial-retreat-77890.herokuapp.com/"
-          target="-blank"
-        >
-          <div class="proj-btn">deployed</div>
         </a>
       </div>
     </div>

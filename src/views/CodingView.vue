@@ -83,7 +83,7 @@ h3.code {
 .code-overview {
   bottom: 0px;
   color: #333;
-  margin: 30px 10% 40px;
+  margin: 125px 10% 50px;
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: rgb(255, 255, 255);

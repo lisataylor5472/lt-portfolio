@@ -14,21 +14,17 @@
             >Portfolio</router-link
           >
         </li>
-        <!-- <li>
-          <router-link class="link" :to="{ name: 'connect' }"
-            >Connect</router-link
-          >
-        </li> -->
         <li>
-          <a href="https://www.linkedin.com/in/thelisataylor/">
+          <a href="https://www.linkedin.com/in/thelisataylor/" target="_blank">
             <img
               alt="LinkedIn"
               src="https://img.icons8.com/ios-glyphs/60/000000/linkedin.png"
               class="social-icon"
+              target="_blank"
           /></a>
         </li>
         <li>
-          <a href="https://github.com/lisataylor5472">
+          <a href="https://github.com/lisataylor5472" target="_blank">
             <img
               alt="GitHub"
               src="https://img.icons8.com/ios-glyphs/60/000000/github.png"
@@ -83,6 +79,7 @@
             <a
               href="https://www.linkedin.com/in/thelisataylor/"
               @click="toggleMobileView"
+              target="_blank"
             >
               <img
                 alt="LinkedIn"
@@ -94,6 +91,7 @@
             <a
               href="https://github.com/lisataylor5472"
               @click="toggleMobileView"
+              target="_blank"
             >
               <img
                 alt="GitHub"
