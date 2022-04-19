@@ -1,13 +1,5 @@
 <template>
   <div class="background-image">
-    <div class="quote">
-      <blockquote>
-        “You know the greatest danger facing us is ourselves, an irrational fear
-        of the unknown. But there’s no such thing as the unknown — only things
-        temporarily hidden, temporarily not understood.”
-      </blockquote>
-      <p>- Captain James T Kirk.</p>
-    </div>
     <div class="code-overview">
       <h2 id="video-games-link">BUILDING SKILLS IN</h2>
       <div class="divider grey"></div>
@@ -98,17 +90,6 @@ h3.code {
   border-style: solid;
   border-width: 1px 1px 2px;
   border-color: #47474f;
-}
-
-.quote {
-  color: #333;
-  padding: 15px 40px 20px;
-  margin: 100px 20% 40px;
-  background-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #47474f;
-  filter: drop-shadow(10px 10px 4px #3b3b3b);
 }
 
 @media screen and (max-width: 767px) {
